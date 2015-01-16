@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'awesome_print'
+gem 'clipboard', '~> 1.0.5'
+gem 'colorize', '~> 0.7.3'
+gem 'httparty', '~> 0.13.1'
+gem 'mechanize', '~> 2.7.3'
+gem 'pry', '~> 0.10.1'
+gem 'sqlite3', '~> 1.3.9'
+gem 'tiny_tds', '~> 0.6.2'
