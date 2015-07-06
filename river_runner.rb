@@ -31,12 +31,15 @@ end
 
   # MAKE THIS LAST PART MUCH BETTER, IT SHOULD BE COMPLETELY CONFIGURABLE< THIS LEVEL THIS CLASS ETC
 
-puts "What is the lowest you will run?"
+puts "What class will you run?"
+
 levels = rivers.map{|riv| riv[:level] }.uniq
 levels.each_with_index do |level, i|
   puts " #{i}) #{level}"
 end
+
 acceptable_levels = levels[STDIN.gets.chomp.to_i..-1]
+
 puts "so you'll do #{acceptable_levels}"
 puts rivers.select{|river| acceptable_levels.include? river[:level] }
 
